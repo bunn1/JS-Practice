@@ -48,3 +48,19 @@ const  fizzBuzz = ( n ) => {
     
   }
 }
+
+// ChessBoard Ex 1 s 38
+
+let pattern="" //empty string
+let n=8 //both the loop should run 8 times)
+for(let i=1;i<=8;i++){
+    for(let j=1;j<=8;j++){
+        if ((i + j) % 2 === 0) {
+            pattern += " " // Even number
+        }else{
+            pattern += "#" // Odd number
+        }
+    }
+    pattern+="\n";//new line for each row
+}
+console.log(pattern);
