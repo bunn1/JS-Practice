@@ -64,3 +64,6 @@ for(let i=1;i<=8;i++){
     pattern+="\n";//new line for each row
 }
 console.log(pattern);
+
+// Program to calculate * and / of two numbers (input from user)
+
