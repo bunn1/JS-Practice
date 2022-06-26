@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 500px;
+    height: 500px;
+    border-radius: 46px;
+    background: #0096e0;
+    box-shadow:  43px 43px 10px #0080be,
+                 -23px -23px 46px #00adff;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    padding: 150px 50px 100px;
+}
+
+button{
+    margin-left: 200px;
+}
