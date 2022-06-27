@@ -67,3 +67,16 @@ console.log(pattern);
 
 // Program to calculate * and / of two numbers (input from user)
 
+let btn = document.getElementById("btnOne");
+
+btnOne.addEventListener("click",function multiplyBy(){
+
+    num1 = document.getElementById("firstNum").value;
+
+    num2 = document.getElementById("secondNum").value;
+
+    document.getElementById("result").innerHTML = num1 * num2;
+
+})
+
+
