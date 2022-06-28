@@ -1,3 +1,68 @@
+// Program to calculate * and / of two numbers (input from user)
+
+let multi = document.getElementById("multi");
+
+let del = document.getElementById("remove");
+
+let dela = document.getElementById("divide");
+
+
+
+multi.addEventListener("click", function multiply() {
+
+    num1 = document.getElementById("firstNum").value;
+
+    num2 = document.getElementById("secondNum").value;
+
+    document.getElementById("result").innerHTML = num1 * num2;
+
+})
+
+dela.addEventListener("click", function divide() {
+
+    num1 = document.getElementById("firstNum").value;
+
+    num2 = document.getElementById("secondNum").value;
+
+    document.getElementById("result").innerHTML = num1 / num2;
+
+})
+
+// Remove Multi and Divide Result
+function remove() {
+    let element = document.getElementById("result");
+    element.remove();
+}
+
+
+// Hide button onclick
+function hideButton(e) {
+    e.style.display = "none";
+}
+
+
+// Change Color Body
+let body1 = document.getElementById("body")
+
+document.getElementById('change').onclick = changeColor;
+
+function changeColor() {
+
+    let backgroundColor = body1.style.backgroundColor;
+
+    if (backgroundColor === "white") {
+        body1.style.backgroundColor = "purple";
+    } else
+        body1.style.backgroundColor = "green";
+{ }
+    return false;
+}
+
+// Change Body backgroundColor
+function changeBodyBg(color) {
+    document.body.style.background = color;
+}
+
 // Triangle Ex s 37-------------------
 
 let x = '';
@@ -69,52 +134,3 @@ for (let i = 1; i <= 8; i++) {
     pattern += "\n"; //new line for each row
 }
 console.log(pattern);
-
-// Program to calculate * and / of two numbers (input from user)
-
-let multi = document.getElementById("multi");
-
-let del = document.getElementById("remove");
-
-let dela = document.getElementById("divide");
-
-
-
-multi.addEventListener("click", function multiply() {
-
-    num1 = document.getElementById("firstNum").value;
-
-    num2 = document.getElementById("secondNum").value;
-
-    document.getElementById("result").innerHTML = num1 * num2;
-
-})
-
-dela.addEventListener("click", function divide() {
-
-    num1 = document.getElementById("firstNum").value;
-
-    num2 = document.getElementById("secondNum").value;
-
-    document.getElementById("result").innerHTML = num1/num2;
-
-})
-
-function remove() {
-    let element = document.getElementById("result");
-    element.remove();
-}
-
-// Hide button onclick
-function hideButton(e) {
-    e.style.display = "none";
-}
-
-// Change Color Body
-document.getElementById('change').onclick = changeColor;   
-function changeColor() {
-    document.body.style.backgroundColor = "purple";
-    document.body.style.backgroundColor = "red";
-
-    return false;
-}  

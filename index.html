@@ -9,7 +9,9 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="body" style="background-color:white">
+
+
 
     <section class='FlexContainer'>
 
@@ -37,13 +39,27 @@
 
     </section>
 
+<br><br>
 
-  
-    <button id="change" onclick="changeColor()">Change Color</button>
+    <div class="container">
+        <!-- Change Body Color -->
+        <div id="bodyColorChange">
+            <button id="change" onclick="changeColor()">Change Color</button>
+        </div>
+        <!-- Hide Button when clicked -->
+        <div id="hideAndSeek">
+            <button id="hideButton" onclick="hideButton(this)">Hide Button</button>
+        </div>
 
-    <br><br>
 
-    <button id="hideButton" onclick="hideButton(element)">Hide Button</button>
+        <!-- Change Background Color Body -->
+        <div>
+            <label>Change Background To:</label>
+            <button type="button" onclick="changeBodyBg('yellow');">Yellow</button>
+            <button type="button" onclick="changeBodyBg('lime');">Lime</button>
+            <button type="button" onclick="changeBodyBg('orange');">Orange</button>
+        </div>
+    </div>
 
     <script src="ovningar.js"></script>
 
