@@ -63,9 +63,7 @@ function changeBodyBg(color) {
     document.body.style.background = color;
 }
 
-// Create An Element and Add to web page
 
-let makeSpan = document.createElement("span");
 
 
 
