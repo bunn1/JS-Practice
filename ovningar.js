@@ -105,6 +105,16 @@ function remove() {
     element.remove();
 }
 
+// Hide button onclick
 function hideButton(e) {
     e.style.display = "none";
 }
+
+// Change Color Body
+document.getElementById('change').onclick = changeColor;   
+function changeColor() {
+    document.body.style.backgroundColor = "purple";
+    document.body.style.backgroundColor = "red";
+
+    return false;
+}  
