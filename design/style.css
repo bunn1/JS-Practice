@@ -49,3 +49,9 @@ input[type="number"] {
  margin: auto;
 }
 
+#hideButton {
+    background-color:	#FFE4B5 ;
+    border: 1px solid;
+
+}
+

@@ -104,3 +104,7 @@ function remove() {
     let element = document.getElementById("result");
     element.remove();
 }
+
+function hideButton(e) {
+    e.style.display = "none";
+}
