@@ -34,12 +34,10 @@ function remove() {
     element.remove();
 }
 
-
 // Hide button onclick
 function hideButton(e) {
     e.style.display = "none";
 }
-
 
 // Change Color Body
 let body1 = document.getElementById("body")
@@ -53,8 +51,7 @@ function changeColor() {
     if (backgroundColor === "white") {
         body1.style.backgroundColor = "purple";
     } else
-        body1.style.backgroundColor = "green";
-{ }
+        body1.style.backgroundColor = "green"; {}
     return false;
 }
 
@@ -65,31 +62,17 @@ function changeBodyBg(color) {
 
 // Show and Hide Img
 
+const showBtn = document.getElementById("showBtn");
+const hideBtn = document.getElementById("hideBtn");
+const img = document.querySelector("img");
 
-
-function show_hide(visible, hidden) {
-    let img = document.getElementById("image");
-    img.style.visibility = (visible ? 'visible' : 'hidden')
-
-    // if ("img" === "inline") {
-    //     document.getElementById("image").style.display = "none"
-    // }else {
-    //     document.getElementById("image").style.display = "inline"
-    // }
-   
-//     if (picture === visible) {
-//           picture.style.visibility = "hidden";
-//     } else {
-//         picture.style.visibility == "visible";
-//     }
-  
+showBtn.onclick = () => {
+    img.style.visibility = 'visible';
  }
-
-
-
-
-
-
+    hideBtn.onclick = () => {
+        img.style.visibility = 'hidden';
+    }
+{ }
 
 // Triangle Ex s 37-------------------
 

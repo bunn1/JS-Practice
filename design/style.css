@@ -65,3 +65,5 @@ input[type="number"] {
 #image {
  margin-left: 360px;
 }
+
+#image { visibility: visible; }
