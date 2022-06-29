@@ -67,6 +67,24 @@ function changeBodyBg(color) {
 
 
 
+function show_hide(visible, hidden) {
+    let img = document.getElementById("image");
+    img.style.visibility = (visible ? 'visible' : 'hidden')
+
+    // if ("img" === "inline") {
+    //     document.getElementById("image").style.display = "none"
+    // }else {
+    //     document.getElementById("image").style.display = "inline"
+    // }
+   
+//     if (picture === visible) {
+//           picture.style.visibility = "hidden";
+//     } else {
+//         picture.style.visibility == "visible";
+//     }
+  
+ }
+
 
 
 
